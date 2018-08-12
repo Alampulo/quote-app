@@ -1,1 +1,16 @@
-/* You can add global styles to this file, and also import other style files */
+.container{
+  padding:180px solid blue;
+  box-sizing: border-box;
+  padding-top: 0px;
+  padding-bottom: 10px;
+  background-color: lightblue;
+ box-shadow: black 2px ;
+}
+ h1{
+   font-family: verdana;
+   font-size: 70px;
+ }
+ p{
+   font-size: 30px;
+   font-family: cursive;
+ }
