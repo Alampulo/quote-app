@@ -1,4 +1,13 @@
-<p>Posted {{Quote.postingDate|dateCount}} days ago</p>
-<button class="btn btn-danger" (click) = 'quoteDelete(true)'>Delete</button>
-<button class="btn btn-success up" (click) = 'upVote()'>upVote ({{Quote.upVote}})</button>
-<button class="btn btn-default down" (click) = 'downVote()'>downVote ({{Quote.downVote}})</button>
+<div style="text-align:center">
+  <h1>Welcome to {{ title }}!</h1>
+</div>
+<app-form (addQuote)="addNewQuote($event)"></app-form>
+<div class="jumbotron" *ngFor="let Quote of quotes; let i=index">
+  <blockquote class="blockquote mb-0">
+    <div>"{{Quote.quote}}"</div>
+    <div>By: {{Quote.author}}</div>
+    <div>Posted by: {{Quote.name}}</div>
+    <div>Posted on: {{Quote.postingDate}}</div>
+    <app-form-details [Quote]='Quote' (complete)='deleteQuote($event,i)'></app-form-details>
+  </blockquote>
+</div>
