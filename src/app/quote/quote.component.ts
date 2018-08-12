@@ -1,11 +1,27 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter} from '@angular/core';
+import { Quote } from '../quote';
 
 @Component({
-  selector: 'app-quote',
-  templateUrl: './quote.component.html',
-  styleUrls: ['./quote.component.css']
+  selector: 'app-form-details',
+  templateUrl: './form-details.component.html',
+  styleUrls: ['./form-details.component.css']
 })
-export class QuoteComponent implements OnInit {
+export class FormDetailsComponent implements OnInit {
+
+  @Input() Quote:Quote;
+  @Output() complete = new EventEmitter<boolean>();
+
+  quoteDelete(deletequt:boolean) {
+    this.complete.emit(deletequt);
+  }
+
+  upVote() {
+    this.Quote.upVote ++
+  }
+
+  downVote() {
+    this.Quote.downVote --
+  }
 
   constructor() { }
 
