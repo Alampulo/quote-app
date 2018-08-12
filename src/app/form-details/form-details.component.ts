@@ -15,6 +15,13 @@ export class FormDetailsComponent implements OnInit {
     this.complete.emit(deletequt);
   }
 
+  upVote() {
+    this.Quote.upVote ++
+  }
+
+  downVote() {
+    this.Quote.downVote --
+  }
 
   constructor() { }
 
