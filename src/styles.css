@@ -1,10 +1,10 @@
 .container{
-  padding:180px solid blue;
-  box-sizing: border-box;
+    box-sizing: border-box;
   padding-top: 0px;
   padding-bottom: 10px;
   background-color: lightblue;
  box-shadow: black 2px ;
+ margin: 0px;
 }
  h1{
    font-family: verdana;
