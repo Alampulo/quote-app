@@ -1,3 +1,7 @@
 <p>
-  form-details works!
+  Posted {{Quote.postingDate|dateCount}} days ago
+<button class="btn btn-danger" (click) = 'quoteDelete(true)'>Delete</button>
+<button class="btn btn-success up" (click) = 'upVote()'>upVote ({{Quote.upVote}})</button>
+<button class="btn btn-default down" (click) = 'downVote()'>downVote ({{Quote.downVote}})</button>
+
 </p>
