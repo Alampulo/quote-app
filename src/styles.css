@@ -1,5 +1,9 @@
 .container{
-  padding-right: 250px;
+  padding-right: 400px;
+  margin-right: 200px;
+  box-sizing: border-box;
+  background-color: blue;
+  box-shadow: violet;
 }
  h1{
    font-family: verdana;
