@@ -20,7 +20,7 @@ export class FormDetailsComponent implements OnInit {
   }
 
   downVote() {
-    this.Quote.downVote --
+    this.Quote.downVote ++
   }
 
   constructor() { }
