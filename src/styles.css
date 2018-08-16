@@ -1,16 +1,23 @@
-.container{
-  padding-right: 400px;
-  margin-right: 200px;
+.container-fluid{
+  padding: 140px ;
+  padding-bottom: 5px;
+  padding-top:20px;
   box-sizing: border-box;
   background-color: lightblue;
-  box-shadow: violet;
-
+  box-shadow: purple;
+  border-width: 120px;
 }
  h1{
    font-family: verdana;
    font-size: 70px;
+   color: indigo;
  }
  p{
    font-size: 30px;
    font-family: cursive;
+   font-stretch: expanded;
  }
+.container{
+  background-color: indigo;
+  padding: 120;
+}
